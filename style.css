@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: rgb(24, 130, 95);
+}
+
+.rotate {
+    position: absolute;
+    border: 5px solid rgb(8, 20, 0);
+    width: 40vw;
+    padding: 7em;
+    transform: translate(70%, 10%);
+    cursor: url("assets/victory1.png"), auto;
+}
+
+.pic {
+    background-image: url("./assets/modiji-victory_1.jpeg");
+    background-color: rgb(255, 182, 136);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    padding: 10em;
+    filter: contrast(100%);
+    /* position: relative; */
+
+    &:hover {
+        background-image: url("./assets/JP-Nadda-1.png");
+        background-color: rgb(0, 0, 0);
+        transition: 0.5s;
+        transition-timing-function: ease-in;
+        cursor: url("assets/loss1.png"), auto;
+    }
+
+    &:not(:hover) {
+        background-color: rgb(244, 108, 34);
+        transition-timing-function: ease-out;
+        transition: 1s;
+    }
+}
